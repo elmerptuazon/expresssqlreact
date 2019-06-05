@@ -1,6 +1,8 @@
 module.exports = {
-  userCredentials: function(user, pass) {
-    var username = user;
-    var password = pass;
+  userCredentials: function(req, res) {
+    var username = "elmer";
+    var password = "test";
+
+    res.send(username + " " + password);
   }
 };
